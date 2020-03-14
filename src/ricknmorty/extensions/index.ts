@@ -1,25 +1,3 @@
-import moment from "moment";
-
-export const Query = {};
-
-/**
- * Add a key to a type
- */
-// export const User = {
-//   [GET_KEY]: (user) => user.id
-// }
-
-/**
- * Add custom data to a type
- * @example
- * query.users[0].follow()
- */
-// export const User = (user) => ({
-//   follow() {
-//     console.log('follow', user.id)
-//   }
-// })
-
-export const Episode = {
-  air_date: (date: string) => moment(date)
-};
+export * from "./Query";
+export * from "./Character";
+export * from "./Episode";
